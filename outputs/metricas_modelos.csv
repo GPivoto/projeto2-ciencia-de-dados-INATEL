@@ -1,4 +1,4 @@
 Modelo,MAPE (%)
 Holt-Winters Multiplicativo,2.75
-Holt-Winters Aditivo,6.58
-"SARIMA(3, 0, 3)x(1, 0, 1, 12)",8.46
+Holt-Winters Aditivo,6.45
+"SARIMA(1, 0, 1)x(1, 0, 1, 12)",8.52

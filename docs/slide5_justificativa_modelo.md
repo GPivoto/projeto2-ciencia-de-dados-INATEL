@@ -1,5 +1,23 @@
 # Slide 5: Modelagem, Validação e Previsão (Otávio)
 
+## Versão curta para colar no slide
+
+**Validação:** treino de 01/2003 a 09/2022 e teste nos últimos 12 meses (10/2022 a 09/2023)
+
+| Modelo | MAPE |
+|---|---|
+| **Holt-Winters Multiplicativo** | **2,75%** |
+| Holt-Winters Aditivo | 6,58% |
+| SARIMA (auto_arima) | 8,46% |
+
+**Modelo escolhido: Holt-Winters Multiplicativo**, com o menor erro no teste. A sazonalidade da série é proporcional ao volume, e o modelo multiplicativo acompanhou melhor a retomada pós-COVID.
+
+**Previsão de 10/2023 a 09/2025:** média de ~81,6M de passageiros/mês, com pico em julho (~92M) e vale em fevereiro (~71M), mais um intervalo de confiança de 95%.
+
+---
+
+## Versão completa (para a fala ou para dúvidas do professor)
+
 ## Metodologia
 - **Série:** total mensal de passageiros (`Pax`), de 01/2003 a 09/2023, com 249 meses e nenhum mês faltando.
 - **Divisão cronológica:** o treino vai de 01/2003 a 09/2022 (237 meses) e o teste cobre os últimos 12 meses, de 10/2022 a 09/2023.
